@@ -32,3 +32,10 @@ cellchat <- aggregateNet(cellchat)
 cellchat <- netAnalysis_computeCentrality(cellchat, slot.name = "netP")
 cellchat_treated <- cellchat
 
+ht1 <- netAnalysis_signalingRole_heatmap(cellchat_control, pattern = "outgoing")
+ht2 <- netAnalysis_signalingRole_heatmap(cellchat_control, pattern = "incoming")
+ht1 + ht2
+
+ht1 <- netAnalysis_signalingRole_heatmap(cellchat_treated, pattern = "outgoing")
+ht2 <- netAnalysis_signalingRole_heatmap(cellchat_treated, pattern = "incoming")
+ht1 + ht2
