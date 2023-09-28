@@ -31,3 +31,4 @@ cellchat <- computeCommunProbPathway(cellchat)
 cellchat <- aggregateNet(cellchat)
 cellchat <- netAnalysis_computeCentrality(cellchat, slot.name = "netP")
 cellchat_treated <- cellchat
+
